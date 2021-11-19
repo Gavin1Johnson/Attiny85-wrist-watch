@@ -44,6 +44,15 @@ Components Used in this project:
 * TL1014BF160QG (X1  Power Button) - (This is the button that will momentarily wake the circuit from sleep mode)
 
 
+Problems / (Solutions):
+
+* SMD LEDs were melting while soldering (Used more flux to dissipate the heat, Tap the soldering iron tip to the LED pad instead of holding it)
+* Soldered all LED's on backwards (Next time I will add polarity markers to the pads while designing the PCB)
+* Watch powers up but won't work (Using the oscilloscope I seen that the I/O pins on the AtTiny were not active like they should be when the button is pressed. This meant the problem was likely with the button. Looking at my schematic I seen that the Buttons footprint was wired incorrectly. Cutting the trace and jumping it with a small wire solved the problem)
+* Por fit of Glass bezel (Using a tolerance of 2mm resulted in too loos of a fit for my 3D printer. To get a better fit, I measured the ID of the 3D printed casing and made small adjustments to the bezel’s diameter.
+
+
+
 What’s next?:
 
 Next, I would like to implement a capacitive touch feature that capacitively couples with the glass on the watch. I plan to implement this by creating a circular pad on the PCB that will capacitively couple with the glass watch face. This will be controlled by a simple capacitive switch IC that will use a transistor to simulate the push button to wake the watch from its sleep. This feature would allow for the power button to be omitted. 
