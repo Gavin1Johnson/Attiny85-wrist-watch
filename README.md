@@ -31,7 +31,7 @@ Procedure:
 * Populate the PCB and assemble watch
 
 
-Components Used in this project:
+Components Used in this project / (Why they were chosen):
 
 * AtTiny85 (x1  Microcontroller) - (This is an 8-bit Microcontroller and was picked for its small formfactor, 4 I/O pins, sleep mode)
 * DS2417P (x1  1-Wire Time chip with interrupt) - (This is a Timer IC that can keep track of time very accurately, has a sleep mode, communicated over 1-Wire interface)
